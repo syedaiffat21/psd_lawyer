@@ -1,0 +1,312 @@
+
+
+    margin-top: 0;
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #051936;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+ .navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(20, 20, 119);
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.banner{
+    background-image:url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;position: relative;
+}
+
+.banner h1{
+
+color: #fff;
+
+font-size: 65px;
+
+text-transform: uppercase;
+}
+.hg{
+    align-items: center;
+    height: 90vh;
+}
+.icon{
+    
+position: absolute;
+    
+left: 50%;
+    
+top: 75%;
+    
+font-size: 30px;
+    
+color: #fff;
+    
+transform: translateX(-50%);
+animation: updown 1s linear infinite;
+animation-direction: alternate;
+}
+
+@keyframes updown{
+    0%{
+        top: 75%;
+    }
+    100%{
+        top:80%;
+    }
+}
+.who_we_are{
+    color: #08376d
+}
+.who_we_are span{
+    height: 5px;
+    width: 0px;
+    background:#F2622C;
+    display: inline-block;
+    transition: .5s all ease-in-out;
+
+}
+.who_we_are h1{
+    color: #204f87;
+    font-size: 40px;
+   
+
+}
+.who_we_are p{
+    color:#b0b0b1;
+    font-family: 'Open Sans', sans-serif;
+}
+.who_we_are:hover span{
+    width: 50px;
+}
+
+.what_we_do{
+    background-color: #f7f8f8;
+    background-image: url(../images/whatwedo-bg.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 1120px;
+}
+.what_we_do:hover .heading span{
+    width: 50px;
+}
+.heading{
+        color: #08376d;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 500;  
+    
+}
+.heading span{
+    height: 5px;
+    width: 0px;
+    background:#F2622C;
+    display: block;
+    margin: auto;
+    transition: .5s all ease-in-out;
+}
+.heading h1{
+    color: #204f87;
+    font-size: 40px;
+}
+.image{
+    position: relative;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left:0%;
+    bottom:0%;
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+2,021287+80&0+0,1+77 */
+    background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(125,185,232,0.03) 2%, rgba(7,24,139,1) 77%, rgba(2,18,135,1) 80%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(125,185,232,0.03) 2%,rgba(7,24,139,1) 77%,rgba(2,18,135,1) 80%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(125,185,232,0.03) 2%,rgba(7,24,139,1) 77%,rgba(2,18,135,1) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#021287',GradientType=0 ); /* IE6-9 */
+
+    opacity: .5;
+    transition: .5s all ease-in-out;
+}
+
+
+.image:hover::before{
+    height: 100%;
+    width: 100%;
+}
+.text{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.text h1{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.image:hover .text{
+    opacity: 1;
+    top:50%;
+}
+.image_icon{
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    color: #fff;
+    font-size: 30px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.image:hover .image_icon{
+    opacity: 1;
+    left:50%;
+}
+.attorney_section{
+    background-image: url(../images/attornysbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+.attorney_section span{
+    width: 0px;
+    height: 5px;
+    display: block;
+    background-color: #f05428;
+    transition: .5s all ease-in-out ;
+}
+.attorney_section h1{
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.attorney_section p{
+    color: #929dcf;
+    font-family: 'Open Sans', sans-serif;
+}
+.attorney_section a{
+    color:#f05428;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.attorney_section:hover span{
+    width: 50px ;
+}
+.designation{
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    opacity: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s all ease-in-out ;
+    
+}
+.image:hover .designation{
+     top: 75%;
+     opacity: 1;
+}
+.language:hover .heading span{
+    width:50px;
+}
+.language{
+
+}
+.language h2 {
+    font-size: 20px;
+    color: #0a3972;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+.language p{
+    color: #b1b0b1 ;
+    font-family: 'Open Sans', sans-serif;
+} 
+.language a{
+    color:#f05428;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+.contact{
+    background-color: #28377e;
+}
+
+form{
+
+}
+form input {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #7b7979;
+    border-radius: 0 !important;
+    caret-color: #fff;
+}
+form input::placeholder{
+    color: #fff !important;
+}
+form textarea::placeholder{
+    color: #fff !important;
+}
+form textarea{
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #7b7979;
+    border-radius: 0 !important;
+    caret-color: #fff;
+}
+form input[type="submit"]{
+    border: none !important;
+    color: #fff;
+    border: 2px solid #f05428 !important;
+    border: none !important;
+    padding: 10px 50px;
+    background-color: #f05428 !important;
+    transition: .5s all ease-in-out;
+}
+form input[type="submit"]:hover{
+    background-color: transparent !important;
+}
+.contact .heading {
+    color: #fff;
+}
+.contact:hover .heading span{
+    width: 50px;
+}
+footer{
+    background-color: #07072F;
+
+}
+footer p{
+    color: #fff;
+
+}
+footer p icon{
+    color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    width:40%;
+    
+
+    
+}
+footer p icon a{
+    color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
